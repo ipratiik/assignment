@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HDS Infotech Assignment
 
-## Getting Started
+A small Next.js + React project (assignment) demonstrating a simple landing/listing layout with Tailwind CSS and a few reusable UI components.
 
-First, run the development server:
+This repository was created as part of the HDS Infotech assignment. It uses Next.js, React, Tailwind CSS and a few lightweight UI utilities.
+
+## Quick summary
+
+- Framework: Next.js (app router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Key folders: `src/app`, `src/sections`, `src/_components/ui`
+
+## Prerequisites
+
+- Recommended: Bun (this repo includes a `bun.lock` file).
+- Alternatively: Node.js + npm / pnpm
+
+## Install
+
+Using Bun (recommended if you have it installed):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Using npm:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Using pnpm:
 
-## Learn More
+```bash
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Run (development)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the dev server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# with bun
+bun run dev
 
-## Deploy on Vercel
+# or with npm
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# or with pnpm
+pnpm dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 in your browser.
+
+## Build & start (production)
+
+```bash
+# build
+npm run build
+
+# start
+npm start
+```
+
+Replace `npm` with `bun run` or `pnpm` if you prefer those package managers.
+
+## Deployment / Live demo
+
+This project is hosted live at: https://tonythetailor.vercel.app
+
+## Project structure (high-level)
+
+- `src/app` - Next.js app folder; `page.tsx` and layout files
+- `src/_components/ui` - small reusable UI components (button, card, avatar, separator)
+- `src/sections` - page sections used by the main page (Banner, Header, Listing, Details, Rating, SectionTabs)
+- `public/` - images and static assets
+
+## Scripts (from package.json)
+
+- `dev` — start dev server
+- `build` — build for production
+- `start` — start production server
+- `lint` — run ESLint
+
+## Notes
+
+- The project targets recent versions of Next.js and React. If you run into issues, ensure your toolchain (Node/Bun) is up to date.
+- Tailwind configuration and Prettier are included for consistent styling.
+
+## Attribution
+
+Prepared for the HDS Infotech assignment. Use this repository as a starting point for further development or evaluation.This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
